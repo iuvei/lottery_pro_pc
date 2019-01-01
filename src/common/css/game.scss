@@ -1,0 +1,83 @@
+@import "./themeEnter";
+
+/* pk10 */
+.peroid-number-list.pk10 > li > div {
+  border-radius: 3px !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-01 > div {
+  background-color: #E6DE01 !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-02 > div {
+  background-color: #0092DD !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-03 > div {
+  background-color: #4B4B4B !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-04 > div {
+  background-color: #FF7602 !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-05 > div {
+  background-color: #17E2E5 !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-06 > div {
+  background-color: #5235FF !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-07 > div {
+  background-color: #BFBFBF !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-08 > div {
+  background-color: #FF2600 !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-09 > div {
+  background-color: #780A00 !important;
+}
+.peroid-number-list.pk10 > li.peroid-number-item-10 > div {
+  background-color: #0CBF02 !important;
+}
+
+/* 六合彩 */
+.peroid-number-list.six >li.blueNum>div{
+  background-color: #0596ea !important
+}
+
+.peroid-number-list.six >li.greenNum>div{
+  background-color: #1ec36c !important
+}
+
+/* 快三 */
+
+.peroid-number-list.k3 >li.peroid-number-item-1 >div{
+  background-image: url('/static/images/game/dice-1@3x.png')
+}
+.peroid-number-list.k3 >li.peroid-number-item-2 >div{
+  background-image: url('/static/images/game/dice-2@3x.png')
+}
+.peroid-number-list.k3 >li.peroid-number-item-3 >div{
+  background-image: url('/static/images/game/dice-3@3x.png')
+}
+.peroid-number-list.k3 >li.peroid-number-item-4 >div{
+  background-image: url('/static/images/game/dice-4@3x.png')
+}
+.peroid-number-list.k3 >li.peroid-number-item-5 >div{
+  background-image: url('/static/images/game/dice-5@3x.png')
+}
+.peroid-number-list.k3 >li.peroid-number-item-6 >div{
+  background-image: url('/static/images/game/dice-6@3x.png')
+}
+.peroid-number-list.k3 >li>div{
+  border-radius: 0 !important;
+  background-size: 100% 100% !important;
+  background-color: transparent!important
+}
+
+/* 重庆幸运农场 */
+.peroid-number-list.xync >li.peroid-number-item-19 >div{
+  background-color: white !important;
+  color:#f10215 !important;
+  border: solid thin #f10215 !important;
+}
+.peroid-number-list.xync >li.peroid-number-item-20 >div{
+  background-color: white !important;
+  color:#f10215 !important;
+  border: solid thin #f10215 !important
+}

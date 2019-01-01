@@ -1,0 +1,41 @@
+@import "./themeEnter";
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "PingFang SC", "Source Han Sans", "sans-serif";
+  background-color: #fafbff;
+  font-size: 14px;
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+}
+
+button {
+  outline: none;
+  border: 1px solid $border-color-gary;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  outline: none;
+}
+
+.mt5{
+  margin-top: 5px;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+

@@ -1,0 +1,97 @@
+{
+  "typeName": "充值提款",
+  "typeId": "3",
+  "list": [
+    {
+      "id": 391303909323011,
+      "question": "会员出款规则",
+      "answer": "<table class=\"help_table\" id=\"table\" style=\" width:500px \"><tr class=\"help_table--row\"><td>\n每次出款下限</td><td id=\"outOnceMin\">10</td><td>重复出款间隔</td><td id=\"outTimeLimit\">不限制</td></tr><tr class=\"help_table--row\"><td>每次出款上限</td><td id=\"outOnceMax\">1000000元</td><td>每日最大出款次数</td><td id=\"outMax\">不限制</td></tr><tr class=\"help_table--row\"><td>每日出款上限</td><td id=\"outDayMax\">5000000元</td><td>每日免手续费次数</td><td id=\"freeTimes\">30次</td></tr><tr class=\"help_table--row\"><td>出款手续费</td><td id=\"outFee\">2元</td><td></td><td></td></tr></table>",
+      "typeId": 3,
+      "show1": 0,
+      "show2": 1,
+      "show3": 1,
+      "sortNum": 1,
+      "markNum": "",
+      "mode": 0,
+      "typeName": null
+    },
+    {
+      "id": 391303920021763,
+      "question": "使用网上银行安全吗？",
+      "answer": "用户在本站充值时选择任一银行卡支付通道后立即进入银行网关，银行卡资料全部在银行网关加密页面上填写，资料提交过程全部采用国际通用的SSL或SET及数字证书进行加密传输，安全性由银行全面提供支持和保护，各银行网上支付系统对网上支付的安全提供保障。",
+      "typeId": 3,
+      "show1": 0,
+      "show2": 1,
+      "show3": 1,
+      "sortNum": 2,
+      "markNum": "",
+      "mode": 0,
+      "typeName": null
+    },
+    {
+      "id": 391303990727427,
+      "question": "通过网上充值，出现该页无法显示时怎么办？",
+      "answer": "· 没有升级IE浏览器，导致加密级别过低，无法进入银行系统。 请升级到8.0及以上版本。<br>\n· 上网环境或上网方式受限，可能是网络服务商限制，如有条件更换一种上网方式或环境。<br>\n· 瞬间网络不通，尝试刷新页面；如果刷新不能解决问题，可能由于浏览器设置缓存，请在IE菜单—工具—Internet选项—点击\"删除cookies\"和\"删除文件\"，用以清除临时文件。<br>",
+      "typeId": 3,
+      "show1": 0,
+      "show2": 1,
+      "show3": 1,
+      "sortNum": 3,
+      "markNum": "",
+      "mode": 0,
+      "typeName": null
+    },
+    {
+      "id": 391304008773379,
+      "question": "没有接到银联打过来的电话怎么办？",
+      "answer": "在线支付是即时向银行系统提交支付信息的，所以如果出现银行卡卡内金额不足、意外断线等状况而导致支付的不成功，请重新提交一次充值并按在线支付的方法操作。",
+      "typeId": 3,
+      "show1": 0,
+      "show2": 1,
+      "show3": 1,
+      "sortNum": 4,
+      "markNum": "",
+      "mode": 0,
+      "typeName": null
+    },
+    {
+      "id": 391304011805955,
+      "question": "提款需要手续费吗？",
+      "answer": "· 达到提款条件才能取款。",
+      "typeId": 3,
+      "show1": 0,
+      "show2": 1,
+      "show3": 1,
+      "sortNum": 5,
+      "markNum": "",
+      "mode": 0,
+      "typeName": null
+    },
+    {
+      "id": 391304021718275,
+      "question": "提款不成功怎么办？",
+      "answer": "提款不成功分两种情况：<br>\n· 提款申请未成功：<br>\n1、提款金额大于账户实有金额。<br>\n2、提款时填写的提款密码与用账户信息设置的提款密码不一致。<br>\n3、银行卡信息不符合规定格式。<br>\n· 申请提款成功，但款项没有到达指定账户：<br>\n1、银行卡卡号填写错误，与用户姓名不符，银行退单。<br>\n一旦发生上述现象，请及时联系客服，由客服人员为您服务。<br>",
+      "typeId": 3,
+      "show1": 0,
+      "show2": 1,
+      "show3": 1,
+      "sortNum": 6,
+      "markNum": "",
+      "mode": 0,
+      "typeName": null
+    },
+    {
+      "id": 391304032493059,
+      "question": "如何查询提款记录？",
+      "answer": "· 用户登录后点击首页右侧的\"提款\"。<br>\n· 在提款页面，点击右上角\"查看提款记录\"。<br>",
+      "typeId": 3,
+      "show1": 0,
+      "show2": 1,
+      "show3": 1,
+      "sortNum": 7,
+      "markNum": "",
+      "mode": 0,
+      "typeName": null
+    }
+  ]
+}

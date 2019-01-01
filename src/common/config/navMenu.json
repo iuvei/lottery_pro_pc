@@ -1,0 +1,23 @@
+[{
+  "name": "首页",
+  "path": "/home",
+  "other": "1"
+}, {
+  "name": "购彩大厅",
+  "path": "/hall"
+}, {
+  "name": "走势分析",
+  "path": "/notice/all"
+},  {
+  "name": "更多游戏",
+  "path": "/more",
+  "other": "1"
+},  {
+  "name": "优惠活动",
+  "path": "/activity",
+  "other": "1"
+},  {
+  "name": "手机购彩",
+  "path": "/phone",
+  "other": "1"
+}]

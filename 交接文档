@@ -1,0 +1,46 @@
+
+游戏先关逻辑
+    /src/util/game/randomSelect.js  机选相关功能
+    /src/util/game/setGameSixColor.js  设置六合彩下注球号颜色
+    /src/util/generateBetTplData.js 生成下注区域模板数据
+    /src/util/lotteryAlgorithmUtil.js 计算下注注数，生成下注接口参数等数据 
+
+
+    store相关
+      betData :下注区域数据
+      betSettings{
+        moneyNum 单注金额
+        multiple 下注的倍数
+        playMode 下注圆角分
+        sliderNum 赔率/返点 滚动条数据
+      }
+
+      betTotalNum 注数
+      betTplType 下注区域的类型 (圆球选择，单式输入框，长方形号码（带有赔率的），龙虎)
+      checkListCombineNum (任选-单式玩法位数上的选择组合数)
+      checkedList  (任选-单式玩法位数上的选择组合)
+      currentGameInfo (跟当前玩法有关的数据)
+      gameInfo（所有游戏的基础配置，很重要！！！！所有游戏是根据这个配置文件来生成相应的下注数据，计算下注的注数和随机算法都依赖这个数据）{
+        addZero 当前彩种投注球号小于10时是否带上0
+        type 当前彩种类型
+        repeat 开奖球号是否允许重号
+        num 开奖号码位数
+        min 开奖的最小球号
+        max 开奖的最大球号
+        includes 当前彩种类型包含的游戏
+      }
+
+      playInfo 后台返回的数据：当前玩法的赔率，返点，玩法说明等信息
+
+      playMenuTitle 玩法名称（前端会根据这个字段区分不同的玩法）
+
+
+java测试站连接
+    103.71.153.113（新测试站）   端口  11223   协议 sstp  用户名 root 密码 Le5JOI8&(*%dsf6`fkj!@5jkl237Njasklasdl
+    pc和wap项目都跑在/home/app/lottery_pro  由git托管管理  入口文件是app.js  项目由pm2启动运行
+    更新流程：连接服务器，进到服务器对应的目录，切换到对应的分支,打包就可以了。
+
+遗留的问题
+    开奖大厅的倒计时轮询问题
+
+

@@ -1,0 +1,20 @@
+[{
+  "name": "常见问题",
+  "path": "/help/normal"
+}, {
+  "name": "个人账户",
+  "path": "/help/account"
+}, {
+  "name": "充值提款",
+  "path": "/help/pay"
+},  {
+  "name": "规则说明",
+  "path": "/help/rule/0",
+  "children": [{
+    "name": "规则说明",
+    "path": "/help/rule/0"
+  }, {
+    "name": "游戏规则",
+    "path": "/help/rule/1"
+  }]
+}]

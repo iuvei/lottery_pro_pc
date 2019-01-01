@@ -1,0 +1,109 @@
+.footer {
+    width: 100%;
+    border-top: 2px solid #f71b2d;
+    background-color: #ffffff;
+}
+.footer .footer-top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.footer .footer-top .module-group {
+    width: 20%;
+    padding-top: 36px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.footer .footer-top .module-group .module-title {
+    width: 100%;
+    margin-bottom: 22px;
+}
+.footer .footer-top .module-group .module-title .icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 11px;
+    vertical-align: middle;
+}
+.footer .footer-top .module-group .module-title .icon.icon-account {
+    background: url("/images/account.png") no-repeat center center;
+    background-size: contain;
+}
+.footer .footer-top .module-group .module-title .icon.icon-recharge {
+    background: url("/images/recharge.png") no-repeat center center;
+    background-size: contain;
+}
+.footer .footer-top .module-group .module-title .icon.icon-exchange {
+    background: url("/images/exchange.png") no-repeat center center;
+    background-size: contain;
+}
+.footer .footer-top .module-group .module-title .icon.icon-customer-service {
+    background: url("/images/customer-service.png") no-repeat center center;
+    background-size: contain;
+}
+.footer .footer-top .module-group .module-title .text {
+    font-size: 16px;
+    color: #666666;
+    vertical-align: middle;
+}
+.footer .footer-top .module-group .list {
+    width: 100%;
+    padding: 8px 0;
+    border-left: 1px solid #dfdfdf;
+}
+.footer .footer-top .module-group .list.kefu-online .item:first-child {
+    margin-bottom: 62px;
+}
+.footer .footer-top .module-group .list.kefu-online .item:last-child {
+    padding-bottom: 11px;
+}
+.footer .footer-top .module-group .list .item {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666666;
+}
+.footer .footer-top .module-group .list .item:last-child {
+    margin-bottom: 0;
+}
+.footer .footer-top .module-group .list .item a {
+    font-size: 14px;
+    color: #666666;
+}
+.footer .footer-top .module-group .list .item a:hover {
+    color: #333333;
+}
+.footer .footer-top .module-group.wanyou {
+    padding-top: 30px;
+}
+.footer .footer-top .module-group.wanyou .logo {
+    width: 141px;
+    height: 29px;
+    margin: 0 auto 20px;
+    background: url("/images/footer-logo.png") no-repeat center center;
+    background-size: contain;
+}
+.footer .footer-top .module-group.wanyou .promise {
+    width: 104px;
+    height: 120px;
+    margin: 0 auto;
+    background: url("/images/promise.png") no-repeat center center;
+    background-size: contain;
+}
+.footer .footer-bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 12px;
+    color: #666666;
+}
+.footer .footer-bottom .copyright {
+    margin-bottom: 12px;
+}
+.footer .footer-bottom .tips {
+    margin-bottom: 20px;
+}

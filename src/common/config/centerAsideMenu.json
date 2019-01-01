@@ -1,0 +1,58 @@
+[{
+	"name": "资料信息",
+	"path": "/my/index"
+}, {
+	"name": "我的财务",
+	"path": "/my/finances/recharge",
+	"children": [{
+		"name": "充值",
+		"path": "/my/finances/recharge"
+	}, {
+		"name": "提现",
+		"path": "/my/finances/withdraw"
+	}, {
+		"name": "转账中心",
+		"path": "/my/finances/transfer"
+	}, {
+		"name": "银行卡",
+		"path": "/my/finances/bankCardManage"
+	}]
+}, {
+	"name": "我的注单",
+	"path": "/my/order"
+}, {
+	"name": "资金记录",
+	"path": "/my/moneylog"
+}, {
+	"name": "代理中心",
+	"path": "/my/agent/0",
+	"children": [{
+		"name": "开户中心",
+		"path": "/my/agent/0"
+	}, {
+		"name": "推广链接",
+		"path": "/my/agent/1"
+	}, {
+		"name": "用户列表",
+		"path": "/my/agent/2"
+	}, {
+		"name": "团队报表",
+		"path": "/my/agent/3"
+	}, {
+        "name": "日工资",
+        "path": "/my/agent/4"
+    }, {
+        "name": "分红",
+        "path": "/my/agent/5"
+    }]
+}, {
+	"name": "消息中心",
+	"path": "/my/announcement",
+	"children": [{
+		"name": "系统公告",
+		"path": "/my/announcement"
+	}, {
+		"name": "站内信",
+		"path": "/my/mailerlist"
+	}]
+}]

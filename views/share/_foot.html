@@ -1,0 +1,54 @@
+<script src="/js/jquery.min.js"></script>
+<script src="js/commonUtils.js"></script>
+<script type="application/javascript">
+  // 获取内容最小高度
+  var screenHeight = document.body.clientHeight
+  var headersHeight = document.querySelector('.headers').offsetHeight;
+  var footersHeight = document.querySelector('.footer').offsetHeight;
+  $('.content-wrapper').css('min-height', screenHeight - headersHeight - footersHeight)
+
+  // header 登录框
+  $('.headers .trial').click(function () {
+    $('.modal-box').addClass('test-play-modal')
+  })
+
+  $('.headers .register-btn').click(function () {
+    $('.modal-box').addClass('register-modal')
+  })
+
+  $('.modal-box .close-btn').click(function () {
+    $('.modal-box').removeClass('test-play-modal').removeClass('register-modal')
+  })
+
+  $('.modal-box .has-account span').click(function () {
+    $('.modal-box').removeClass('register-modal')
+  })
+
+  $('.headers .input-group input').focus(function () {
+    $('.headers .btn-group .login-btn').addClass('lightBg').siblings().removeClass('lightBg')
+  })
+
+  $('.headers .input-group input').blur(function () {
+    $('.headers .btn-group .register-btn').addClass('lightBg').siblings().removeClass('lightBg')
+  })
+
+  let obj = {
+    type: 0,
+    token: getCookies()
+  }
+
+  $.ajax({
+    url: 'http://lottery.lebole5.com/api/member/info',
+    method: 'POST',
+    data: JSON.stringify(obj),
+    success: function (res) {
+      if(res.data && res.data.user){
+        showUserInfo();
+      }else{
+        hiddenUserInfo()
+      }
+    }
+  })
+
+</script>
+</html>

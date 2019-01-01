@@ -1,0 +1,66 @@
+//容器宽度
+$container-width: 1190px;
+
+//字体定义规范
+$font-size-small-s: 10px;
+$font-size-small: 12px;
+$font-size-medium: 16px;
+$font-size-medium-x: 16px;
+$font-size-large: 18px;
+
+//主题色
+$theme-color: #f71b2d;
+
+//渐变色
+$gradient-color: linear-gradient(to right, #FF192C, #FF3D4C);
+$gradient-color1: linear-gradient(to right, #f30c1e, #ff505e);
+$gradient-color-reverse: linear-gradient(to right, #ff505e, #f30c1e);
+
+//颜色
+$color-theme: #f30e20;
+$color-theme2: #f84a57;
+$color-white: #ffffff;
+$color-dark: #666666;
+$color-black: #333333;
+$color-gary: #999999;
+$color-icon: #adb3bf;
+$color-active-icon: #fd2234;
+$tips-bgColor: #464646;
+
+$border-color-gary: #dfdfdf;
+
+@mixin button-normal-base {
+  text-align: center;
+  background: $gradient-color;
+  font-size: $font-size-medium;
+  color: $color-white;
+  border: none;
+}
+
+@mixin button-submit-base {
+  width: 218px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: -1px 3px 4px #ffd0d3;
+  text-align: center;
+  font-size: $font-size-medium;
+  background: $gradient-color;
+  color: #fff;
+  &:hover {
+    background: $gradient-color-reverse;
+  }
+}
+
+@mixin noData {
+  width: 100%;
+  height: 300px;
+  border-bottom: none;
+  td {
+    text-align: center;
+    font-size: $font-size-medium;
+    color: $color-gary;
+  }
+}

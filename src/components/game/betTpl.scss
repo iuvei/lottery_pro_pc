@@ -1,0 +1,345 @@
+.bet-area {
+}
+
+.bet-area-textarea {
+  width: 100%;
+  height: 250px;
+  border: solid 0.5px #F0F1F6;
+  border-radius: 6px;
+  outline: none;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  resize: none;
+  line-height: 20px;
+  background-color: white
+}
+
+.bet-area-list>li {
+  display: inline-block;
+  width: 100%;
+  margin-top: .2rem;
+}
+.long-hu>li {
+  width: auto !important;
+}
+
+
+.bet-area-list .bet-area-title {
+  text-align: center;
+  font-weight: 600;
+  color: #777988;
+  height: 30px;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 20px;
+  width: 80px
+}
+
+.bet-area-list .bet-area-title.bet-area-vs-title {
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.bet-area-content {
+  flex: 1;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+}
+.bet-area-content-wrap{
+  display: -webkit-box;
+}
+
+.btn-select-list {
+  display: flex;
+  border: solid 0.5px #F0F1F6;
+  border-radius: 5px;
+  margin: 0 2px;
+  overflow: hidden;
+  font-size: 13px;
+  background-color: white;
+  color: #777988;
+  margin-top: 10px;
+  width: 260px
+}
+
+.btn-select-list>li:hover {
+  color: #fa2939;
+}
+.btn-select-list>li {
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+  width: 40px;
+  height: 34px;
+  cursor: pointer;
+  flex: 1
+}
+
+.btn-select-list>li:last-child {
+  border: none;
+}
+
+.select-round-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: helvetica;
+  color: #666;
+}
+
+.select-round-list>li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px 20px 5px 0 
+}
+
+.select-round-list>li:nth-child(5n) {
+  width: 40px;
+}
+
+.select-round-list>li>div {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  color: #222;
+  text-align: center;
+  line-height: 40px;
+  border: solid 0.5px #F0F1F6;
+  font-size: 18px;
+  transition: all ease-in 0.2s;
+  box-shadow: 0px 2px 2px #e8eaf2bd;
+  cursor: pointer;
+}
+.select-round-list>li>div:not(.bet-selected-item):hover{
+  color: #fa2939;
+  border: solid 0.5px #fa2939
+}
+
+.bet-area-content .bet-selected-item {
+  color: white;
+  background: linear-gradient(to right, #f64554, #fc6470);
+  box-shadow: 0px 2px 2px #fe3c4c75;
+  border-color: transparent;
+}
+
+#app .bet-area-content .bet-selected-item.blueNum{
+  background: #0596ea
+}
+#app .bet-area-content .bet-selected-item.greenNum{
+  background: #1ec36c
+}
+
+.btn-selected-item:not(:last-child) {
+  color: white;
+  background: linear-gradient(to right, #F74654, #FC6672);
+}
+
+/* 龙虎样式 */
+.select-dragonTiger-list>li {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+  line-height: 35px;
+}
+
+.select-dragonTiger-list>li>div:not(:nth-child(2)) {
+  flex: 1;
+  background-color: white;
+  border: solid 0.5px #F0F1F6;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: .2rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.select-dragonTiger-list>li>div:nth-child(2) {
+  width: 50px;
+  text-align: center;
+}
+
+.select-dragonTiger-list>li>div.active {
+  color: white;
+}
+
+.select-rect-list {
+  display: flex;
+}
+
+.select-rect-list>li {
+  flex: 1;
+  cursor: pointer;
+}
+
+.rect-odds-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: helvetica;
+  justify-content: space-between
+}
+
+.rect-odds-list>li {
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  transition: border linear .2s,color linear .2s;
+  overflow: hidden;
+  margin: 4px 0;
+}
+
+
+.rect-odds-list-4 li {
+  width: calc(25% - 7px)
+}
+
+
+.select-rect-list>li>div {
+  border: solid 0.5px #F0F1F6;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.rect-odds-item {
+  border-radius: 3px;
+  &:hover{
+    background-color: rgb(253,242,242);
+    cursor: pointer;
+  }
+  &.rect-odds-item-selected{
+    background-color: #ffd194
+  }
+}
+
+.rect-odds-item>div:first-child {
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+}
+
+.rect-odds-item>div:last-child {
+  line-height: 20px;
+  font-size: 14px;
+  color: #c5c7d6
+}
+.horizontal{
+  .rect-odds-item{
+    width: 183px;
+  }
+  .rect-odds-item:nth-child(5n){
+    margin-right: 0;
+  }
+}
+.bet-area-list li.empty-cell{
+  visibility: hidden
+}
+
+
+
+/* 信用玩法 */
+.bet-area-credit{
+  .bet-area-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >li:not(.horizontal){
+      .bet-area-content-wrap{
+        width: 183px
+      }
+    }
+  }
+  
+  .bet-area-content-wrap{
+    display: block;
+  }
+  
+  .rect-odds-list{
+    display: block;
+  }
+
+  .bet-area-title{
+    text-align: center;
+    width: auto;
+    border-bottom: 1px solid #fa2939;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .bet-area-title:after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 30px;
+    border: solid 8px transparent;
+    border-top: solid 8px #fa2939;
+    left: 50%;
+    margin-left: -8px;
+  }
+
+  .rect-odds-item-selected.rect-odds-item{
+    >div.bet-text-wrap{
+      background-color: red;
+      color: white
+    }
+  }
+  
+  .rect-odds-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 4px;
+    .input-wrap{
+      width: 70px
+    }
+    .odds-wrap{
+      color: #666;
+      font-size: 14px;
+      flex: 1
+    }
+  }
+  .rect-odds-list-4 li{
+    width: auto
+  }
+  .rect-odds-item > div{
+    &.bet-number.bet-text-wrap{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    background-color: #fa2939;
+    color: white;
+    }
+    &.bet-text-wrap{
+      width: 50px;
+      background-color: #e5e7ef;
+      border-radius: 5px
+    }
+  }
+}
+
+.horizontal{
+  width: 100%;
+  .bet-area-content-wrap{
+    width: 100%
+  }
+}
+
+.horizontal .rect-odds-list{
+  display: flex;
+}
+
+.text-intro{
+  font-size: 12px;
+  line-height: 30px;
+  color: #666
+}

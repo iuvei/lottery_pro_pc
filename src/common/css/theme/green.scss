@@ -1,0 +1,65 @@
+//容器宽度
+$container-width: 1190px;
+
+//字体定义规范
+$font-size-small-s: 10px;
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-medium-x: 16px;
+$font-size-large: 18px;
+
+//主题色
+$theme-color: green;
+
+//渐变色
+$gradient-color: linear-gradient(to right, green, green);
+$gradient-color1: linear-gradient(to right, green, green);
+$gradient-color-reverse: linear-gradient(to right, green, green);
+
+//颜色
+$color-theme: green;
+$color-theme2: green;
+$color-white: #ffffff;
+$color-dark: #666666;
+$color-black: #333333;
+$color-gary: #999999;
+$color-icon: #adb3bf;
+$tips-bgColor: #464646;
+
+$border-color-gary: #dfdfdf;
+
+@mixin button-normal-base {
+  text-align: center;
+  background: $gradient-color;
+  font-size: $font-size-medium;
+  color: $color-white;
+  border: none;
+}
+
+@mixin button-submit-base {
+  width: 218px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: -1px 3px 4px #ffd0d3;
+  text-align: center;
+  font-size: $font-size-medium;
+  background: $gradient-color;
+  color: #fff;
+  &:hover {
+    background: $gradient-color-reverse;
+  }
+}
+
+@mixin noData {
+  width: 100%;
+  height: 300px;
+  border-bottom: none;
+  td {
+    text-align: center;
+    font-size: $font-size-medium;
+    color: $color-gary;
+  }
+}

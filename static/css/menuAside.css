@@ -1,0 +1,117 @@
+.aside-menu {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #f30e20;
+    border-right: 1px solid #f30e20;
+    border-bottom: 1px solid #f30e20;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.aside-menu .aside-top {
+    padding: 12px 19px 0;
+    border-bottom: 1px dashed #dfdfdf;
+}
+
+.aside-menu .aside-top .game-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.aside-menu .aside-top .game-group:hover  .game-info .name {
+    color: #f30e20;
+}
+
+.aside-menu .aside-top .game-group .icon {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    margin-right: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.aside-menu .aside-top .game-group .game-info .name {
+    line-height: 1.5;
+    font-size: 16px;
+    color: #000000;
+}
+
+.aside-menu .aside-top .game-group .game-info .text {
+    line-height: 1.2;
+    font-size: 12px;
+    color: #e59300;
+}
+
+.aside-menu .aside-sort {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 66px;
+    padding: 8px 22px 0 10px;
+    border-bottom: 1px dashed #dfdfdf;
+}
+
+.aside-menu .aside-sort:last-child {
+    border-bottom: none;
+}
+
+.aside-menu .aside-sort .icon-box {
+    flex: 0 0 36px;
+    margin-right: 20px;
+}
+
+.aside-menu .aside-sort .icon-box .icon {
+    width: 28px;
+    height: 25px;
+    margin: 0 auto 8px;
+}
+
+.aside-menu .aside-sort .icon-box .icon.icon-high {
+    background: url("/images/home/high_lottery.png") no-repeat center center;
+    background-size: contain;
+}
+
+.aside-menu .aside-sort .icon-box .icon.icon-low {
+    background: url("/images/home/low_lottery.png") no-repeat center center;
+    background-size: contain;
+}
+
+.aside-menu .aside-sort .icon-box .icon.icon-all {
+    background: url("/images/home/icon-all.png") no-repeat center center;
+    background-size: contain;
+}
+
+.aside-menu .aside-sort .icon-box .text {
+    text-align: center;
+    font-size: 12px;
+    color: #ff4949;
+}
+
+.aside-menu .aside-sort .sort-right {
+    flex: 1;
+    align-self: self-start;
+}
+
+.aside-menu .aside-sort .sort-right a {
+    display: inline-block;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    width: 48%;
+    font-size: 12px;
+    color: #666666;
+}
+
+.aside-menu .aside-sort .sort-right a:hover {
+    color: #f30e20;
+}
+
+
+
+
+

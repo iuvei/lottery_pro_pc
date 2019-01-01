@@ -1,0 +1,385 @@
+.headers {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.headers .header-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 78px;
+}
+
+.headers .logo {
+    display: inline-block;
+    width: 243px;
+    height: 29px;
+    background: url("/images/logo.png") no-repeat left center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.headers .header-bottom {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right, #f10215, #ff3d4c);
+}
+
+.headers .header-bottom .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.headers .header-bottom .nav .hot-lottery {
+    width: 220px;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.headers .header-bottom .nav .nav-list {
+    font-size: 0;
+}
+
+.headers .header-bottom .nav .nav-list .item {
+    display: inline-block;
+}
+
+.headers .header-bottom .nav .nav-list .item a {
+    display: inline-block;
+    width: 128px;
+    height: 4px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    transition: all .3s linear;
+}
+
+.headers .header-bottom .nav .nav-list .item a:hover {
+    background-color: #d90011;
+}
+
+.headers .header-bottom .nav .nav-list .selected a {
+    background-color: #E41727;
+}
+
+.header-right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-right .input-group > input {
+    width: 128px;
+    height: 38px;
+    margin-right: 10px;
+    padding: 0 9px;
+    outline: none;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fafbff;
+    vertical-align: middle;
+}
+.header-right .trial {
+    margin: 0 16px 0 6px;
+    font-size: 14px;
+    color: #f30e20;
+}
+.header-right .btn-group .btn {
+    width: 88px;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 1px solid #f30e20;
+    margin-right: 10px;
+    background-color: #ffffff;
+    color: #f30e20;
+    transition: all 0.3s linear;
+}
+.header-right .btn-group .btn.lightBg, .header-right .btn-group .btn:hover {
+    border: 1px solid transparent;
+    background-color: #f30e20;
+    color: #ffffff;
+}
+
+.header-right-logined {
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-right-logined .login-message {
+    margin-right: 11px;
+    font-size: 14px;
+    color: #666666;
+}
+.header-right-logined .login-message span b {
+    color: #f61527;
+}
+.header-right-logined .login-message span.name {
+    margin-right: 19px;
+}
+.header-right-logined .list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-right-logined .list .item {
+    margin: 0 8px;
+}
+.header-right-logined .list .item a {
+    font-size: 14px;
+    color: #666666;
+}
+.header-right-logined .list .item a:hover {
+    color: #f61527;
+}
+.header-right-logined .list .item:last-child {
+    margin-right: 0;
+}
+
+
+
+/*用户模态框*/
+.user-wrapper .text-red {
+    color: #f30e20;
+}
+.modal-box.register-modal .user-wrapper .group.register-group {
+    display: block; !important;
+}
+.modal-box.test-play-modal .mask , .modal-box.register-modal .mask {
+    display: block;
+}
+.modal-box.test-play-modal .user-wrapper .group.test-play-group {
+    display: block; !important;
+}
+.user-wrapper .group {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 14px #A4A6BC;
+    z-index: 9999;
+}
+.user-wrapper .group.register-group {
+    display: none;
+    width: 438px;
+    padding: 48px 48px 52px;
+    box-sizing: border-box;
+}
+.user-wrapper .group.register-group .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    background: url("/images/home/icon-close.png") no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+.user-wrapper .group.register-group .wg-logo {
+    width: 205px;
+    height: 26px;
+    margin-bottom: 20px;
+    background: url("/images/logo.png") no-repeat left center;
+    background-size: contain;
+}
+.user-wrapper .group.register-group .title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333333;
+}
+.user-wrapper .group.register-group .input-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+}
+.user-wrapper .group.register-group .input-group .text {
+    flex: 0 0 66px;
+    border-right: 1px solid #dfdfdf;
+    font-size: 14px;
+    color: #333333;
+}
+.user-wrapper .group.register-group .input-group > .input {
+    flex: 1;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    color: #333333;
+}
+.user-wrapper .group.register-group .input-group.code-group {
+    padding-right: 0;
+}
+.user-wrapper .group.register-group .input-group.code-group .code-box {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user-wrapper .group.register-group .input-group.code-group .code-box .input {
+    flex: 1;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    color: #333333;
+}
+.user-wrapper .group.register-group .input-group.code-group .code-box .code {
+    flex: 0 0 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #d8d8d8;
+}
+.user-wrapper .group.register-group .submit {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ffffff;
+    margin: 20px 0 13px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #666666;
+}
+.user-wrapper .group.register-group .submit.selected {
+    border: 1px solid transparent;
+    background-color: #f71b2d;
+}
+.user-wrapper .group.register-group .submit.ban {
+    cursor: not-allowed;
+}
+.user-wrapper .group.register-group .other-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.user-wrapper .group.register-group .other-group .text-red {
+    color: #f30e20;
+    cursor: pointer;
+}
+.user-wrapper .group.register-group .other-group .checkbox-group {
+    font-size: 14px;
+    vertical-align: middle;
+}
+.user-wrapper .group.register-group .other-group .checkbox-group input {
+    margin: 0;
+}
+.user-wrapper .group.register-group .other-group .has-account {
+    font-size: 14px;
+    color: #666666;
+}
+.user-wrapper .group.test-play-group {
+    display: none;
+    width: 438px;
+    padding: 48px 48px 52px;
+    box-sizing: border-box;
+}
+.user-wrapper .group.test-play-group .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    background: url("/images/home/icon-close.png") no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+.user-wrapper .group.test-play-group .wg-logo {
+    width: 205px;
+    height: 26px;
+    margin-bottom: 48px;
+    background: url("/images/logo.png") no-repeat left center;
+    background-size: contain;
+}
+.user-wrapper .group.test-play-group .text {
+    margin-bottom: 25px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #666666;
+}
+.user-wrapper .group.test-play-group .code-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 36px;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+}
+.user-wrapper .group.test-play-group .code-box .input {
+    flex: 1;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    color: #333333;
+}
+.user-wrapper .group.test-play-group .code-box .code {
+    flex: 0 0 120px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #d8d8d8;
+}
+.user-wrapper .group.test-play-group .btn-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-wrapper .group.test-play-group .btn-group button {
+    width: 164px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #f30e20;
+    text-align: center;
+    font-size: 14px;
+    color: #f30e20;
+    background-color: #ffffff;
+}
+.user-wrapper .group.test-play-group .btn-group button.textPlay-btn {
+    border: 1px solid transparent;
+    color: #ffffff;
+    background-color: #f30e20;
+}
+
+.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}

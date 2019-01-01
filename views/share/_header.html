@@ -1,0 +1,150 @@
+<link rel="stylesheet" type="text/css" href="/css/header.css" />
+<div class="headers">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-box">
+                <a href="/hall" class="logo"></a>
+                <div class="header-right">
+                    <div class="input-group">
+                        <input type="text"class="account" placeholder="输入用户名">
+                        <input type="password" class="psd" placeholder="输入密码">
+                    </div>
+                    <a href="javascript:;" class="trial">免费试玩</a>
+                    <div class="btn-group">
+                        <button type="button" class="btn login-btn">登录</button>
+                        <button type="button" class="btn lightBg register-btn">注册</button>
+                    </div>
+                </div>
+                    <div class="header-right-logined">
+                        <div class="login-message">
+                            <span class="name">您好: </span>
+                            <span class="price">余额: </span>
+
+                        </div>
+                        <ul class="list">
+                            <li class="item">
+                                <a href="/my/index">个人中心</a>
+                            </li>
+                            |
+                            <li class="item">
+                                <a href="/my/finances/recharge">充值</a>
+                            </li>
+                            |
+                            <li class="item">
+                                <a href="/my/finances/transfer">转账</a>
+                            </li>
+                            |
+                            <li class="item">
+                                <a href="/my/finances/withdraw">提现</a>
+                            </li>
+                            |
+                            <li class="item">
+                                <a href="/my/order">投注记录</a>
+                            </li>
+                            |
+                            <li class="item">
+                                <a href="/help/normal">帮助中心</a>
+                            </li>
+                            |
+                            <li class="item">
+                                <a href="/proxyjoin">代理加盟</a>
+                            </li>
+                            |
+                            <li class="item"><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="nav">
+                <div class="hot-lottery">热门彩种</div>
+                <ul class="nav-list">
+                    <li class="item <%= navActive === 1?'selected':'' %>">
+                        <a href="/home">首页</a>
+                    </li>
+                    <li class="item">
+                        <a href="/hall">购彩大厅</a>
+                    </li>
+                    <li class="item">
+                        <a href="/notice/all">走势分析</a>
+                    </li>
+                    <li class="item <%= navActive === 4?'selected':'' %>">
+                        <a href="/more">更多游戏</a>
+                    </li>
+                    <li class="item <%= navActive === 5?'selected':'' %>">
+                        <a href="/activity">优惠活动</a>
+                    </li>
+                    <li class="item <%= navActive === 6?'selected':'' %>">
+                        <a href="/phone">手机购彩</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-box">
+    <div class="user-wrapper">
+        <div class="register-group group">
+            <span class="close-btn"></span>
+            <div class="wg-logo"></div>
+            <div class="title">立即加入-信誉保障</div>
+            <div class="input-group">
+                <div class="text">邀请码</div>
+                <input maxlength="10" class="input" type="text" placeholder="请输入邀请码（非必填）">
+            </div>
+            <div class="input-group">
+                <div class="text">用户名</div>
+                <input maxlength="16" class="input" type="text" placeholder="4-16个字母或数字">
+            </div>
+            <div class="input-group">
+                <div class="text">密码</div>
+                <input maxlength="16" class="input" type="password"
+                       placeholder="4-16个同时包含字母或数字的组合">
+            </div>
+            <div class="input-group">
+                <div class="text">确认密码</div>
+                <input maxlength="16" class="input" type="password"
+                       placeholder="确认输入密码">
+            </div>
+            <div class="input-group">
+                <div class="text">真实姓名</div>
+                <input maxlength="50" class="input" type="text" placeholder="真实姓名">
+            </div>
+            <div class="input-group code-group">
+                <div class="text">验证码</div>
+                <div class="code-box">
+                    <input maxlength="4" class="input" type="text" placeholder="请输入验证码">
+                </div>
+            </div>
+            <button type="button" class="submit" @click="register_submit_handle">立即注册
+            </button>
+            <div class="other-group">
+                <label class="checkbox-group">
+                    <input type="checkbox">
+                    已阅读并同意 <span class="text-red">《彩票服务条款》</span>
+                </label>
+                <div class="has-account">
+                    已有账户
+                    <span class="text-red">登录</span>
+                </div>
+            </div>
+        </div>
+        <div class="test-play-group group">
+            <span class="close-btn iconfont icon-guanbi"></span>
+            <div class="wg-logo"></div>
+            <div class="text">试玩账号只供玩家熟悉游戏。不允许充值和提款，且不享有参加优惠活动的权利，有效时间为<span class="text-red">72</span>小时</div>
+            <div class="code-box">
+                <input maxlength="4" class="input" type="text" placeholder="请输入验证码">
+            </div>
+            <div class="btn-group">
+                <button type="button">取消</button>
+                <button type="button" class="textPlay-btn">立即试玩</button>
+            </div>
+        </div>
+    </div>
+    <div class="mask"></div>
+</div>
+
+

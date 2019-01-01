@@ -1,0 +1,7 @@
+.gamePlayBox {
+    display: inline-block;
+    width: 640px;
+    height: 288px;
+    margin-right: 10px;
+    border: 1px solid #dfdfdf;
+}
